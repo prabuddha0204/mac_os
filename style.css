@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "FindersKeepers";
+  src: url("./fonts/FindersKeepers.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ChiKareGo";
+  src: url("./fonts/ChiKareGo.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAAAWJAAAFiQFtaJ36AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABCSURBVHgBjY2xDQAgCARf4y4s5KasQsM0qImNgNFvSIC/K53ZQIRbGmQNza+zWPFIfBCvcEivOwmqHwpkCgl720gMiFsLcca+WZYAAAAASUVORK5CYII="); /* Your pattern */
+  background-repeat: repeat;
+}
+
+/* Common full screen layout */
+.screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center image in splash1 */
+.boot-image {
+  width: 4rem;
+  height: auto;
+  z-index: 2;
+}
+
+/* Main Mac box */
+.one {
+  width: 27rem;
+  height: 13rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  box-shadow: inset 0 0 0 4px black;
+  z-index: 2;
+}
+.image-container img {
+  width: 15%; /* scales with container */
+  height: auto;
+  display: block;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+.two {
+  width: 28rem;
+  height: 14rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  z-index: 1;
+}
+.welcome {
+  font-family: "ChiKareGo", sans-serif;
+  position: relative;
+  top: -93px;
+  left: 150px;
+  font-size: 1.8rem;
+}
+.version {
+  top: -115px;
+  left: 150px;
+  font-family: "FindersKeepers";
+  font-size: 2rem;
+}
+.black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1000;
+}
+
+.slide-up {
+  animation: slideUp 1s ease forwards;
+}
+
+.slide-down {
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+h1 {
+  font-family: "ChiKareGo", sans-serif;
+}
