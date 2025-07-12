@@ -115,3 +115,22 @@ body {
 h1 {
   font-family: "ChiKareGo", sans-serif;
 }
+.navbar {
+  font-family: "ChiKareGo", sans-serif;
+  width: 100vw;
+  height: 2.5rem;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  margin-top: 0.5rem;
+  color: black;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
