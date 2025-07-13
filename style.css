@@ -286,9 +286,10 @@ body {
   background-color: white;
   overflow: auto;
 }
-.welcome {
-  top: -5rem;
-  left: 42rem;
+.welcome3 {
+  position: fixed;
+  right: 4rem;
+  top: 14.5rem;
 }
 .small2 {
   font-family: "FindersKeepers";
