@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAC OS</title>
+    <title>Macintosh</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="download (1).png" />
   </head>
   <body>
     <!-- Splash Screen 1 -->
@@ -23,21 +24,71 @@
         <p class="welcome">Welcome to Macintosh</p>
         <p class="welcome version">Version 1.0</p>
       </div>
-    </div>-->
+    </div> -->
 
     <div id="main-ui" class="screen" style="display: flex">
       <div class="navbar">
         <ul class="nav">
           <li style="margin-top: -0.3rem"><img src="download (1).png" /></li>
-          <li>File</li>
-          <li>Edit</li>
-          <li>Label</li>
-          <li>View</li>
-          <li>Special</li>
+          <li><button class="menu1">File</button></li>
+          <li><button class="menu2">Edit</button></li>
+          <li><button class="menu3">Label</button></li>
+          <li><button class="menu4">View</button></li>
+          <li><button class="menu5">Special</button></li>
+          <li>
+            <img
+              src="assets/ques.png"
+              style="
+                height: 30px;
+                width: 60px;
+                position: absolute;
+                right: 6rem;
+                bottom: 0.2rem;
+              "
+            />
+          </li>
+          <li>
+            <img
+              src="assets/box.png"
+              style="
+                height: 28px;
+                width: 60px;
+                position: absolute;
+                right: 1rem;
+                bottom: 0.35rem;
+              "
+            />
+          </li>
         </ul>
       </div>
-    </div>
+      <div id="file" style="display: none">
+        <ul class="filee">
+          <li class="black">
+            <button class="n1">New Folder</button>
+          </li>
+          <li><button class="n1">Open</button></li>
+          <li><button class="n1">Print</button></li>
+          <li class="black"><button class="n1">Close Window</button></li>
+          <br />
 
-    <!-- <script src="app.js"></script> -->
+          <li class="black"><button class="n1">Get Info</button></li>
+          <li class="black"><button class="n1">Sharing...</button></li>
+          <li><button class="n1">Duplicate</button></li>
+          <li class="black"><button class="n1">Make Alias</button></li>
+          <li><button class="n1">Put Away</button></li>
+          <br />
+          <li class="black"><button class="n1">Find</button></li>
+          <li class="black"><button class="n1">Find Again</button></li>
+          <br />
+
+          <li class="black"><button class="n1">Page Setup</button></li>
+          <li class="black"><button class="n1">Print Window</button></li>
+        </ul>
+      </div>
+      <img src="assets/trash.png" class="trash" />
+      <div class="small">Trash</div>
+
+
+    <script src="app.js"></script>
   </body>
 </html>

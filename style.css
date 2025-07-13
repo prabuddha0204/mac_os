@@ -132,5 +132,53 @@ h1 {
   justify-content: space-between;
   width: 30rem;
   font-size: 2rem;
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
+}
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5,
+.n1 {
+  all: unset;
+  cursor: pointer;
+}
+.filee {
+  font-family: "ChiKareGo", sans-serif;
+  background-color: white;
+  list-style-type: none;
+  height: 19rem;
+  width: 8rem;
+  padding-left: 1.5rem;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  color: gray;
+  border: 2px solid black;
+}
+.black {
+  color: black;
+}
+#file {
+  position: fixed; /* or fixed */
+  top: 1.9rem;
+  left: 6rem;
+}
+.trash {
+  position: fixed;
+  bottom: 3.3rem;
+  right: 4rem;
+  height: 3rem;
+  width: 2.8rem;
+}
+.small {
+  font-family: "FindersKeepers";
+  height: 1rem;
+  width: 2rem;
+  background-color: white;
+  position: fixed;
+  bottom: 2.2rem;
+  right: 4.3rem;
+  font-size: 1.1rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0rem;
 }
