@@ -144,12 +144,13 @@ h1 {
   cursor: pointer;
 }
 .filee {
+  box-shadow: 2px 2px 0px black;
   font-family: "ChiKareGo", sans-serif;
   background-color: white;
   list-style-type: none;
-  height: 19rem;
+  height: 11rem;
   width: 8rem;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   padding-top: 0.4rem;
   font-size: 1.2rem;
   color: gray;
@@ -161,7 +162,7 @@ h1 {
 #file {
   position: fixed; /* or fixed */
   top: 1.9rem;
-  left: 6rem;
+  left: 6.5rem;
 }
 .trash {
   position: fixed;
@@ -181,4 +182,123 @@ h1 {
   font-size: 1.1rem;
   padding-left: 0.2rem;
   padding-bottom: 0rem;
+}
+#edit {
+  position: fixed; /* or fixed */
+  top: 1.9rem;
+  left: 11rem;
+}
+.editt {
+  box-shadow: 2px 2px 0px black;
+  font-family: "ChiKareGo", sans-serif;
+  background-color: white;
+  list-style-type: none;
+  height: 11rem;
+  width: 8rem;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  color: gray;
+  border: 2px solid black;
+}
+#view {
+  position: fixed; /* or fixed */
+  top: 1.9rem;
+  left: 16.5rem;
+}
+.vieww {
+  box-shadow: 2px 2px 0px black;
+  font-family: "ChiKareGo", sans-serif;
+  background-color: white;
+  list-style-type: none;
+  height: 6rem;
+  width: 5.5rem;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  color: gray;
+  border: 2px solid black;
+}
+#special {
+  position: fixed; /* or fixed */
+  top: 1.9rem;
+
+  left: 22.5rem;
+}
+.speciall {
+  box-shadow: 2px 2px 0px black;
+  font-family: "ChiKareGo", sans-serif;
+  background-color: white;
+  list-style-type: none;
+  height: 4rem;
+  width: 6rem;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  color: gray;
+  border: 2px solid black;
+}
+body {
+  background-color: #dcdcdc;
+  font-family: monospace;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.window {
+  width: 480px;
+  height: 530px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px black;
+  background: white;
+  resize: both;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 10;
+}
+
+.title-bar {
+  height: 20px;
+  background: #f3f3f3;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the text horizontally */
+  font-weight: bold;
+  font-size: 12px;
+  flex-shrink: 0;
+  cursor: move;
+  user-select: none;
+  position: relative;
+}
+
+.text-area {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: white;
+  overflow: auto;
+}
+.welcome {
+  top: -5rem;
+  left: 42rem;
+}
+.small2 {
+  font-family: "FindersKeepers";
+  height: 1rem;
+  width: 3.3rem;
+  background-color: white;
+  position: fixed;
+  bottom: 23.6rem;
+  right: 4.2rem;
+  font-size: 1.3rem;
+  padding-left: 0.3rem;
+  padding-bottom: 0.2rem;
 }

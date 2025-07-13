@@ -42,3 +42,75 @@ document.addEventListener("click", (e) => {
     file.style.display = "none";
   }
 });
+let edit = document.querySelector("#edit");
+let btn2 = document.querySelector(".menu2");
+btn2.addEventListener("click", () => {
+  if (edit.style.display === "flex") {
+    edit.style.display = "none";
+  } else {
+    edit.style.display = "flex";
+  }
+});
+document.addEventListener("click", (e) => {
+  if (!btn2.contains(e.target) && !edit.contains(e.target)) {
+    edit.style.display = "none";
+  }
+});
+let view = document.querySelector("#view");
+let btn3 = document.querySelector(".menu3");
+btn3.addEventListener("click", () => {
+  if (view.style.display === "flex") {
+    view.style.display = "none";
+  } else {
+    view.style.display = "flex";
+  }
+});
+document.addEventListener("click", (e) => {
+  if (!btn3.contains(e.target) && !edit.contains(e.target)) {
+    view.style.display = "none";
+  }
+});
+let special = document.querySelector("#special");
+let btn4 = document.querySelector(".menu4");
+btn4.addEventListener("click", () => {
+  if (special.style.display === "flex") {
+    special.style.display = "none";
+  } else {
+    special.style.display = "flex";
+  }
+});
+document.addEventListener("click", (e) => {
+  if (!btn4.contains(e.target) && !edit.contains(e.target)) {
+    special.style.display = "none";
+  }
+});
+const windowEl = document.getElementById("window");
+const titleBar = document.getElementById("titleBar");
+
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+titleBar.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  offsetX = e.clientX - windowEl.offsetLeft;
+  offsetY = e.clientY - windowEl.offsetTop;
+  windowEl.style.zIndex = parseInt(windowEl.style.zIndex || 10) + 1;
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (isDragging) {
+    windowEl.style.left = `${e.clientX - offsetX}px`;
+    windowEl.style.top = `${e.clientY - offsetY}px`;
+  }
+});
+
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+});
+const welcomeIcon = document.querySelector(".welcome1");
+const welcomeWindow = document.getElementById("welcomeWindow");
+
+welcomeIcon.addEventListener("click", () => {
+  welcomeWindow.style.display = "flex";
+});

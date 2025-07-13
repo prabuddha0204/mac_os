@@ -25,22 +25,21 @@
         <p class="welcome version">Version 1.0</p>
       </div>
     </div> -->
-
+    <!-- screen main -->
     <div id="main-ui" class="screen" style="display: flex">
       <div class="navbar">
         <ul class="nav">
           <li style="margin-top: -0.3rem"><img src="download (1).png" /></li>
           <li><button class="menu1">File</button></li>
           <li><button class="menu2">Edit</button></li>
-          <li><button class="menu3">Label</button></li>
-          <li><button class="menu4">View</button></li>
-          <li><button class="menu5">Special</button></li>
+          <li><button class="menu3">View</button></li>
+          <li><button class="menu4">Special</button></li>
           <li>
             <img
               src="assets/ques.png"
               style="
                 height: 30px;
-                width: 60px;
+                width: 55px;
                 position: absolute;
                 right: 6rem;
                 bottom: 0.2rem;
@@ -63,31 +62,100 @@
       </div>
       <div id="file" style="display: none">
         <ul class="filee">
-          <li class="black">
-            <button class="n1">New Folder</button>
-          </li>
-          <li><button class="n1">Open</button></li>
-          <li><button class="n1">Print</button></li>
-          <li class="black"><button class="n1">Close Window</button></li>
-          <br />
-
-          <li class="black"><button class="n1">Get Info</button></li>
-          <li class="black"><button class="n1">Sharing...</button></li>
+          <li class="black"><button class="n1">Open</button></li>
           <li><button class="n1">Duplicate</button></li>
-          <li class="black"><button class="n1">Make Alias</button></li>
-          <li><button class="n1">Put Away</button></li>
-          <br />
-          <li class="black"><button class="n1">Find</button></li>
-          <li class="black"><button class="n1">Find Again</button></li>
+          <li class="black"><button class="n1">Get Info</button></li>
+          <li><button class="n1">Put Back</button></li>
+          <li><button class="n1">Close</button></li>
           <br />
 
-          <li class="black"><button class="n1">Page Setup</button></li>
-          <li class="black"><button class="n1">Print Window</button></li>
+          <li><button class="n1">Close All</button></li>
+
+          <li><button class="n1">Print</button></li>
+          <li class="black"><button class="n1">Eject</button></li>
+          <br />
+        </ul>
+      </div>
+      <div id="edit" style="display: none">
+        <ul class="editt">
+          <li>
+            <button class="n1">Undo</button>
+          </li>
+          <br />
+          <li class="black"><button class="n1">Cut</button></li>
+          <li class="black"><button class="n1">Copy</button></li>
+          <li class="black"><button class="n1">Paste</button></li>
+
+          <li class="black"><button class="n1">Clear</button></li>
+          <li class="black"><button class="n1">Select All</button></li>
+          <br />
+          <li class="black"><button class="n1">Show Clipboard</button></li>
+        </ul>
+      </div>
+      <div id="view" style="display: none">
+        <ul class="vieww">
+          <li>
+            <button class="n1">by Icon</button>
+          </li>
+          <li><button class="n1">by Name</button></li>
+          <li><button class="n1">by Date</button></li>
+          <li><button class="n1">by Size</button></li>
+          <li><button class="n1">by Kind</button></li>
+        </ul>
+      </div>
+
+      <div id="special" style="display: none">
+        <ul class="speciall">
+          <li class="black">
+            <button class="n1">Clean Up</button>
+          </li>
+          <li><button class="n1">Empty Trash</button></li>
+          <li class="black"><button class="n1">Erase Disk</button></li>
         </ul>
       </div>
       <img src="assets/trash.png" class="trash" />
       <div class="small">Trash</div>
+      <div class="window" id="welcomeWindow" style="display: none">
+        <div class="title-bar" id="titleBar">
+          Welcome
 
+          <button
+            onclick="document.getElementById('welcomeWindow').style.display='none'"
+            style="
+              position: absolute;
+              left: 5px;
+              top: 1.3px;
+              font-size: 10px;
+              cursor: pointer;
+              height: 1rem;
+            "
+          ></button>
+        </div>
+        <div class="text-area" contenteditable="true">
+          Welcome!<br /><br />
+          ───────────<br /><br />
+
+          Welcome to my Retro Web Desktop Project. <br /><br />A digital
+          recreation inspired by the aesthetics of Macintosh System 7 (1991).<br /><br />
+          What’s included:<br />
+          • Windowed interfaces, icons, and UI controls <br />
+          • Classic title bars, draggable and resizable windows <br />
+          • Pixel-perfect design with black & white and color variants <br />
+          • Styled folders, dialog boxes, and text areas <br />
+          • Built with HTML, CSS, and JavaScript (no frameworks)<br /><br />
+          ──────────────────── <br /><br />
+          CHANGELOG<br /><br />
+          July, 2025: Initial public version released.<br /><br />
+          If you enjoy this project, consider starring it on GitHub ★<br /><br />
+          © 2025 Prabuddha Saxena. UI inspired by Apple Inc. and designed by
+          Susan Kare.
+        </div>
+      </div>
+      <div class="welcome1">
+        <img src="assets/window.png" class="welcome" />
+        <div class="small2">Welcome</div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
