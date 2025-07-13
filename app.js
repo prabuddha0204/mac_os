@@ -84,7 +84,7 @@ document.addEventListener("click", (e) => {
     special.style.display = "none";
   }
 });
-const windowEl = document.getElementById("window");
+const windowEl = document.getElementById("welcomeWindow");
 const titleBar = document.getElementById("titleBar");
 
 let isDragging = false;
