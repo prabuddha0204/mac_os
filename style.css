@@ -139,9 +139,10 @@ h1 {
 .menu3,
 .menu4,
 .menu5,
-.n1 {
+.n1,.hi {
   all: unset;
   cursor: pointer;
+  
 }
 .filee {
   box-shadow: 2px 2px 0px black;
@@ -222,6 +223,7 @@ h1 {
 #special {
   position: fixed; /* or fixed */
   top: 1.9rem;
+  z-index: 1000;
 
   left: 22.5rem;
 }
@@ -275,7 +277,9 @@ body {
   cursor: move;
   user-select: none;
   position: relative;
+  
 }
+
 
 .text-area {
   flex-grow: 1;
@@ -302,4 +306,129 @@ body {
   font-size: 1.3rem;
   padding-left: 0.3rem;
   padding-bottom: 0.2rem;
+}
+.folderp {
+  height: 4rem;
+  position: fixed;
+  right: 2.7rem;
+  top: 24.5rem;
+}
+.hd {
+  height: 4rem;
+  position: fixed;
+  right: 3rem;
+  top: 5.5rem;
+}
+
+
+    .folder-window {
+      
+      width: 600px;
+      height: 400px;
+      background: white;
+      border: 2px solid black;
+      box-shadow: 3px 3px 0px black;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      resize: both;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+
+    .folder-titlebar {
+      background: #f3f3f3;
+      padding: 7px;
+      border-bottom: 1px solid black;
+      cursor: move;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+.folder-content {
+  font-family: "FindersKeepers";
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  column-gap: 80px; /* Horizontal gap between columns */
+  row-gap: 40px;     /* Vertical gap between rows */
+}
+
+    .file-icon {
+      font-size: 1.5rem;
+      width: 80px;
+      text-align: center;
+     
+    }
+
+    .file-icon img {
+      width: 40px;
+      height: 40px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+    #folder1 {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+#apple{
+  position: fixed; /* or fixed */
+  top: 1.9rem;
+z-index: 1000;
+  left: 2.5rem;
+}
+.applee{
+  box-shadow: 2px 2px 0px black;
+  font-family: "ChiKareGo", sans-serif;
+  background-color: white;
+  list-style-type: none;
+  height: 7rem;
+  width: 7rem;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+  color: gray;
+  border: 2px solid black;
+}
+li :hover{
+  color:gray;
+}
+    .note-window {
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      border: 2px solid #999;
+      resize: both;
+      overflow: auto;
+      background-color: #ffffb3;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .note-titlebar {
+      background-color: #ffb300;
+      padding: 6px;
+      cursor: move;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .note-content {
+      padding: 10px;
+      height: calc(100% - 32px);
+      box-sizing: border-box;
+    }
+
+    .note-content[contenteditable] {
+      outline: none;
+    }
+    .note-window {
+  top: 300px;  
+  left: 960px; 
 }

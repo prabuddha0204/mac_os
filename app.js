@@ -84,6 +84,20 @@ document.addEventListener("click", (e) => {
     special.style.display = "none";
   }
 });
+let apple = document.querySelector("#apple");
+let btn5 = document.querySelector(".hi");
+btn5.addEventListener("click", () => {
+  if (apple.style.display === "flex") {
+    apple.style.display = "none";
+  } else {
+    apple.style.display = "flex";
+  }
+});
+document.addEventListener("click", (e) => {
+  if (!btn5.contains(e.target) && !edit.contains(e.target)) {
+    apple.style.display = "none";
+  }
+});
 const windowEl = document.getElementById("welcomeWindow");
 const titleBar = document.getElementById("titleBar");
 
@@ -111,6 +125,66 @@ document.addEventListener("mouseup", () => {
 const welcomeIcon = document.querySelector(".welcome1");
 const welcomeWindow = document.getElementById("welcomeWindow");
 
-welcomeIcon.addEventListener("click", () => {
+welcomeIcon.addEventListener("dblclick", () => {
   welcomeWindow.style.display = "flex";
+});
+const folderWindowEl = document.getElementById("folder1");
+const folderTitleBarEl = document.getElementById("folder1-title");
+
+let isFolderDragging = false;
+let folderOffsetX = 50;
+let folderOffsetY = 50;
+
+folderTitleBarEl.addEventListener("mousedown", (e) => {
+  isFolderDragging = true;
+  folderOffsetX = e.clientX - folderWindowEl.offsetLeft;
+  folderOffsetY = e.clientY - folderWindowEl.offsetTop;
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (isFolderDragging) {
+    folderWindowEl.style.left = `${e.clientX - folderOffsetX}px`;
+    folderWindowEl.style.top = `${e.clientY - folderOffsetY}px`;
+  }
+});
+
+document.addEventListener("mouseup", () => {
+  isFolderDragging = false;
+});
+ const folderIcon = document.querySelector(".folderp");
+  const folderWindow = document.getElementById("folder1");
+
+  folderIcon.addEventListener("dblclick", () => {
+    folderWindow.style.display = "flex";
+  });
+  const noteWindow = document.getElementById("noteWindow");
+  const noteTitleBar = document.getElementById("noteTitleBar");
+
+  let isNoteDragging = false;
+  let dragOffsetX, dragOffsetY;
+
+  noteTitleBar.addEventListener("mousedown", (e) => {
+    isNoteDragging = true;
+    dragOffsetX = e.clientX - noteWindow.offsetLeft;
+    dragOffsetY = e.clientY - noteWindow.offsetTop;
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (isNoteDragging) {
+      noteWindow.style.left = `${e.clientX - dragOffsetX}px`;
+      noteWindow.style.top = `${e.clientY - dragOffsetY}px`;
+    }
+  });
+
+  document.addEventListener("mouseup", () => {
+    isNoteDragging = false;
+  });
+  let note = document.querySelector("#noteWindow");
+let btn6 = document.querySelector(".notepad");
+btn6.addEventListener("click", () => {
+  if (note.style.display === "block") {
+    note.style.display = "none";
+  } else {
+    note.style.display = "block";
+  }
 });
